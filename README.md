@@ -14,7 +14,7 @@ run number, hits, duration (s)
 
 ### Push to spread sheet
 ```
-$ push_table.py src/table.txt --spreadsheet_id 1YzBrLN3aDanu4JOdso_ZwmYtY1mUt2wibBRgowMV_aE --sheet_id 0
+$ push_table.py table.txt --spreadsheet_id 1YzBrLN3aDanu4JOdso_ZwmYtY1mUt2wibBRgowMV_aE --sheet_id 0
 ```
 
 ### Pull from spread sheet
@@ -25,6 +25,8 @@ $ pull_table.py test.txt --spreadsheet_id 1YzBrLN3aDanu4JOdso_ZwmYtY1mUt2wibBRgo
 
 ### Install
 ```
+git clone git@github.com:andyofmelbourne/google_sheets_push.git
+cd google_sheets_push
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 export PATH=$(pwd)/src:$PATH
 ```
