@@ -58,8 +58,9 @@ export PATH=$(pwd)/src:$PATH
 - click "Audience" on left
     - click "+ Add users"
     - enter gmail account of any users, then save
-- `python authenticate_google.py` which launches a browser, then click OK and continue a few times to produce a `token.json` file
-- now `python test.py` should print names from an online spreadsheet
+- `python src/authenticate_google.py` which launches a browser, then click OK and continue a few times to produce a `token.json` file
+- `mv token.json credentials`
+- now `python stc/test.py` should print names from an online spreadsheet
     
 google link for this stuff: https://developers.google.com/workspace/sheets/api/quickstart/python
 
